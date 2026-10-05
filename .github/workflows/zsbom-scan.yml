@@ -250,7 +250,7 @@ jobs:
         run: |
           echo "✅ ZSBOM scan completed successfully (Template Version: ${{ env.TEMPLATE_VERSION }})!"
           echo "📊 Results uploaded to Zerberus dashboard: https://api.zerberus.ai"
-          echo "🔐 SBOM signed and uploaded as workflow artifact"
+          echo "🔐 SBOM signed and uploaded as workflow artifact."
           echo "💡 No vulnerability threshold violations detected."
 
       - name: Scan failed - blocking PR
@@ -270,3 +270,4 @@ jobs:
           echo "   • Workflow artifacts for SBOM and validation reports"
           echo ""
           echo "⚠️  This workflow file is managed by Zerberus automation - do not edit manually."
+
