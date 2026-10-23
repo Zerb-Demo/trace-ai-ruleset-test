@@ -247,7 +247,7 @@ jobs:
         if: success()
         run: |
           echo "✅ ZSBOM scan completed successfully (Template Version: ${{ env.TEMPLATE_VERSION }})!"
-          echo "📊 Results uploaded to Zerberus dashboard: https://api.zerberus.ai"
+          echo "📊 Results uploaded to Zerberus dashboard: ${{ env.ZERBERUS_DASHBOARD_URL }}/trace-ai/dashboard"
           echo "🔐 SBOM signed and uploaded as workflow artifact"
           echo "💡 No vulnerability threshold violations detected."
 
@@ -264,7 +264,7 @@ jobs:
           echo ""
           echo "📊 Check the following for detailed information:"
           echo "   • PR comment above (if applicable)"
-          echo "   • Zerberus dashboard: https://api.zerberus.ai"
+          echo "   • Zerberus dashboard: ${{ env.ZERBERUS_DASHBOARD_URL }}/trace-ai/dashboard"
           echo "   • Workflow artifacts for SBOM and validation reports"
           echo ""
           echo "⚠️  This workflow file is managed by Zerberus automation - do not edit manually."
