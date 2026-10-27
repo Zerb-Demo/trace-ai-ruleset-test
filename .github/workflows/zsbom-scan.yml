@@ -27,11 +27,11 @@ permissions:
   id-token: write
 
 env:
-  TEMPLATE_VERSION: "0.0.6"
+  TEMPLATE_VERSION: "0.0.8"
   PYTHON_VERSION: "3.11"
   PIP_VERSION: "24.0"
-  GO_VERSION: "1.24"
-  ZSBOM_VERSION: "v0.15.0-beta.0"  # Stable release tag
+  GO_VERSION: "1.26"
+  ZSBOM_VERSION: "v0.16.0-beta.0"  # Stable release tag
   ZERBERUS_API_URL: "https://api.zerberus.ai"  # Centralized API URL
   ZERBERUS_DASHBOARD_URL: "https://app.zerberus.ai"  # Dashboard URL for PR comments
 
